@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --orange:#F00;
+    --blue:#142F43;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; 
+    border:none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    background: #eee;
+}
+
+.blogs .box{
+    box-shadow:var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;    
+    margin: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.blogs .box .image{
+    height: 40rem;
+    overflow:hidden;
+    width: 100%;
+}
+
+.blogs .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs .box .content{
+    padding:2rem;
+    margin-bottom: -2rem;
+}
+
+.blogs .box .content .title{
+    font-size: 4rem;
+    line-height: 1.2;
+    color: var(--blue);
+    font-weight: bolder;
+}
+
+.blogs .box .content span{
+    color: #F00;
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.blogs .box .content p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color:var(--light-color);
+    padding:.5rem 0;
+    text-align: justify;
+}
+
+.blogs .box .content h2{
+    font-size: 2rem;
+    line-height: 1;
+    color:var(--orange);
+    padding:0 0;
+    margin-top: 2rem;
+}
+
+.blogs .box h3{
+    font-size: 2rem;
+    line-height: 0.5;
+    color:var(--blue);
+    padding:1rem 1rem;
+    margin-top: 1rem;
+}
+
+.blogs .box li{
+    font-size: 1.6rem;
+    line-height: 0.5;
+    color:var(--light-color);
+    padding:.5rem 0;
+    text-align: justify;
+    margin-left: 1.5rem;
+}
+
+.blogs .box form textarea{
+    border-radius: 1rem;
+    margin:1rem 1rem;
+    margin-top: 1rem;
+    background: #D06224;
+}
+
+
+.blogs .box form textarea::placeholder{
+    color: var(--blue);
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+.blogs .box form textarea{
+    background:#FF8080;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color: var(--blue);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width:98%;
+}
+
+.blogs .box form textarea:focus{
+    border:.1rem solid var(--blue);
+}
+
+.blogs .box form textarea{
+    height:20rem;
+    resize: none;
+}
+
+.btn-submit{
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--blue);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:1rem 3rem;
+    float: left;
+}
+
+.btn-submit:hover{
+    background: var(--orange);
+    letter-spacing: .1rem;
+}
+
+.btn-back{
+    margin-right: 1rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: #666;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:1rem 3rem;
+    float: right;
+}
+
+.btn-back:hover{
+    background: #413F42;
+    letter-spacing: .1rem;
+}
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    .blogs .box{
+        padding:0;
+        margin:.5rem;
+    }
+    img{
+        height:auto;
+        width: 100%;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 55%;
+    }
+    .blogs .box{
+        padding:0;
+        margin:0;
+    }
+
+}
