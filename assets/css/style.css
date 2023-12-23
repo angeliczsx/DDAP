@@ -7,8 +7,8 @@
 .navbar-area {
     position: fixed;
     top: 40px;
-    left: 24px;
-    right: 24px;
+    left: 104px;
+    right: 104px;
     z-index: 3;
     background: white;
     box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.10);
@@ -18,65 +18,6 @@
 .site-navbar .mobile {
     display: none;
 }
-
-
-@media (max-width: 728px) {
-    .navbar-area {
-        top: 20px;
-        left: 20px;
-        right: 20px;
-    }
-
-    .site-navbar {
-        margin: 0 10px;
-    }
-
-    .site-navbar .item {
-        display: none;
-    }
-
-    .site-navbar input {
-        display: none;
-    }
-
-    .site-navbar .mobile {
-        display: block;
-    }
-
-    .site-navbar .mobile img {
-        margin: 0 0 0 10px;
-        height: 30px;
-        width: 30px;
-    }
-
-    .site-navbar .bars img {
-        height: 25px;
-        width: 25px;
-    }
-}
-
-@media (min-width: 728px) and (max-width: 968px) {
-    .navbar-area {
-        left: 54px;
-        right: 54px;
-    }
-
-    .site-navbar {
-        margin: 0;
-    }
-
-    .site-navbar .item {
-        margin: 0 0 0 30px;
-        text-decoration: none;
-        color: #000;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 19px;
-        letter-spacing: -0.32px;
-    }
-}
-
 
 .site-navbar {
     margin: 0 30px;
@@ -115,8 +56,17 @@ a.site-logo .image {
     color: #D9D9D9;
 }
 
-.site-navbar .item {
-    margin: 0 10px;
+.site-navbar #MenuItems {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-navbar #MenuItems .item {
+    padding: 0 10px;
+    height: 20px;
+    text-align: center;
     text-decoration: none;
     color: #000;
     font-size: 16px;
@@ -156,6 +106,56 @@ a.site-logo .image {
         font-weight: 800;
         line-height: 19px;
         letter-spacing: -0.32px;
+    }
+}
+
+@media (max-width: 728px) {
+    .navbar-area {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+    }
+
+    .site-navbar {
+        margin: 0 10px;
+    }
+
+    #MenuItems {
+        flex-wrap: wrap;
+        width: 40%;
+        padding: 20px;
+        background-color: #FFF;
+        position: absolute;
+        top: 75px;
+        right: 5px;
+        display: none;
+        height: fit-content;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    #MenuItems .item {
+        text-align: center;
+        font-size: 20px !important;
+    }
+
+    .site-navbar input {
+        display: none;
+    }
+
+    .site-navbar .mobile {
+        display: block;
+    }
+
+    .site-navbar .mobile img {
+        margin: 0 0 0 10px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .site-navbar .bars img {
+        height: 25px;
+        width: 25px;
     }
 }
 

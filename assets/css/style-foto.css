@@ -9,16 +9,17 @@
 
 * {
     font-family: 'Raleway', sans-serif;
-    padding:0;
+   
+}
+
+html{
+    padding-top:10;
     box-sizing: border-box;
     text-decoration: none;
     outline: none; 
     border:none;
     text-transform: capitalize;
     transition: all .2 linear;
-}
-
-html{
     margin-bottom: 2rem;
     font-size: 62.5%;
     overflow-x: hidden;
