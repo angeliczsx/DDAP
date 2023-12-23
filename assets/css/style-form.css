@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    border:none;
+}
+
+.navbar-area {
+    position: fixed;
+    top: 40px;
+    left: 24px;
+    right: 24px;
+    z-index: 3;
+    background: white;
+    box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.10);
+    border-radius: 20px
+}
+
+.site-navbar .mobile {
+    display: none;
+}
+
+
+@media (max-width: 728px) {
+    .navbar-area {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+    }
+
+    .site-navbar {
+        margin: 0 10px;
+    }
+
+    .site-navbar .item {
+        display: none;
+    }
+
+    .site-navbar input {
+        display: none;
+    }
+
+    .site-navbar .mobile {
+        display: block;
+    }
+
+    .site-navbar .mobile img {
+        margin: 0 0 0 10px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .site-navbar .bars img {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media (min-width: 728px) and (max-width: 968px) {
+    .navbar-area {
+        left: 54px;
+        right: 54px;
+    }
+
+    .site-navbar {
+        margin: 0;
+    }
+
+    .site-navbar .item {
+        margin: 0 0 0 30px;
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 19px;
+        letter-spacing: -0.32px;
+    }
+}
+
+.site-navbar {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a.site-logo {
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #58BD8B;
+    text-decoration: none;
+}
+
+a.site-logo .image {
+    margin: 14px 0;
+    height: 39px;
+    width: 86px;
+}
+
+.site-navbar input {
+    height: 30px;
+    width: 157px;
+    color: #C4C4C4;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: -0.3px;
+}
+
+.site-navbar input::placeholder {
+    color: #D9D9D9;
+}
+
+.site-navbar .item {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 19px; /* 118.75% */
+    letter-spacing: -0.32px;
+}
+
+.site-navbar .item:hover {
+    color: #F00;
+    font-weight: bold;
+    line-height: 23px; /* 121.053% */
+    letter-spacing: -0.38px;
+}
+
+@media (min-width: 728px) and (max-width: 968px) {
+    .navbar-area {
+        left: 54px;
+        right: 54px;
+    }
+
+    .site-navbar {
+        margin: 0;
+    }
+
+    .site-navbar input {
+        margin: 0;
+    }
+
+    .site-navbar .item {
+        margin: 0 10px 0 10px;
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 19px;
+        letter-spacing: -0.32px;
+    }
+}
+
+:root{
+    --orange:#F00;
+    --blue:#142F43;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+gambar{
+    height:100%;
+    padding: 1rem;
+}
+
+html{
+    margin-bottom: 2rem;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    background: #eee;
+}
+
+.btn-reset{
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: #990000;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+    float: left;
+}
+
+.btn-reset:hover{
+    background: #630606;
+    letter-spacing: .1rem;
+}
+
+.btn-submit{
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--blue);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+    float: right;
+}
+
+.btn-submit:hover{
+    background: var(--orange);
+    letter-spacing: .1rem;
+}
+
+.sub-heading{
+    text-align: center;
+    color:var(--orange);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.sub-sub-heading{
+    text-align: center;
+    color: #FF8080;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+.heading{
+    margin-top: -1.5rem;
+    text-align: center;
+    color:var(--blue);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.donor form{
+    max-width:90rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,.2);
+    background:#fff;
+    padding:1.5rem;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+.donor form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.donor form .inputBox .input{
+    width:49%;
+}
+
+.donor form .inputBox .input span{
+    display:block;
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:var(--light-color);
+}
+.donor form .inputBox input::placeholder,
+.donor form .inputBox .input textarea::placeholder{
+    color: var(--blue);
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+.label {
+    background:#FF8080;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color: #eee;
+    text-transform: none;
+    margin-bottom: 1rem;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.donor form .inputBox .input input,
+.donor form .inputBox .input textarea{
+    background:#FF8080;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color: #eee;
+    text-transform: none;
+    margin-bottom: 1rem;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.donor form .inputBox .input input:focus,
+.donor form .inputBox .input textarea:focus{
+    border:.1rem solid var(--blue);
+}
+
+.donor form .inputBox .input textarea{
+    height:20rem;
+    resize: none;
+}
+
+.donor form .btn{
+    margin-top: 0;
+}
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    .donor .box{
+        padding:0;
+        margin:.5rem;
+    }
+    img{
+        size:55%;
+        height:auto;
+        width: 100%;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 55%;
+    }
+    .donor .box{
+        padding:0;
+        margin:0;
+    }
+
+}
